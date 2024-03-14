@@ -32,20 +32,129 @@ body {
 }
 
 .card {
-  background: var(--color-pale-blue);
+  background: var(--color-white);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
+  width: 350px;
 }
 
 .card .result {
   background: linear-gradient(
-    to left top,
+    to top,
     var(--color-light-royal-blue),
     var(--color-light-state-blue)
   );
   text-align: center;
   padding: 30px;
+  border-radius: 30px;
+  color: var(--color-white);
+}
+
+.card .result #your-result {
+  opacity: 0.8;
+}
+
+.card .result .circle {
+  background: linear-gradient(to top, transparent, var(--color-violet-blue));
+  height: 120px;
+  width: 120px;
+  shape-outside: circle();
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circle #average {
+  font-size: 45px;
+  margin-top: 8px;
+}
+
+.result .text {
+  opacity: 0.5;
+}
+
+.circle p {
+  margin-top: -30px;
+  opacity: 0.7;
+}
+
+.summary {
+  padding: 0 20px;
+}
+
+.summary > section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary > section {
+  margin-bottom: 10px;
+}
+
+.score-card-1 {
+  background: hsla(0, 100%, 70%, 0.2);
+  padding: 0 15px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.score-card-2 {
+  background: hsla(51, 75%, 70%, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.score-card-3 {
+  background: hsla(121, 40%, 70%, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.score-card-4 {
+  background: hsla(221, 65%, 66%, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+}
+
+.type p {
+  font-weight: 600;
+}
+
+.type .category-1 {
+  color: var(--color-light-red);
+  margin-left: 5px;
+}
+
+.type .category-2 {
+  color: var(--color-orange-yellow);
+  margin-left: 5px;
+}
+
+.type .category-3 {
+  color: var(--color-green-tea);
+  margin-left: 5px;
+}
+
+.type .category-4 {
+  color: var(--color-cobalt-blue);
+  margin-left: 5px;
+}
+
+.score {
+  display: flex;
+  align-items: center;
 }
 
 .attribution {
