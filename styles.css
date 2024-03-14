@@ -21,6 +21,7 @@
 body {
   margin: 0;
   font-family: "Hanken Grotesk";
+  letter-spacing: 1px;
 }
 
 .container {
@@ -97,7 +98,7 @@ body {
 
 .score-card-1 {
   background: hsla(0, 100%, 70%, 0.2);
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 10px;
   height: 60px;
 }
@@ -134,27 +135,69 @@ body {
 
 .type .category-1 {
   color: var(--color-light-red);
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .type .category-2 {
   color: var(--color-orange-yellow);
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .type .category-3 {
   color: var(--color-green-tea);
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .type .category-4 {
   color: var(--color-cobalt-blue);
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .score {
   display: flex;
   align-items: center;
+}
+
+.score .score-number {
+  font-weight: 800;
+}
+
+.score .total {
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.lash {
+  margin: 0 5px;
+}
+
+.btn {
+  background: var(--color-dark-gray-blue);
+  color: #eae6e6;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 40%;
+  }
+
+  .result {
+    grid-column: span 2;
+  }
+
+  .summary {
+    grid-column: span 2;
+    padding: 20px;
+  }
 }
 
 .attribution {
